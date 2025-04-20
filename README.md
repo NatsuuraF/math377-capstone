@@ -1,98 +1,43 @@
-# Capstone Template
+The Lottery Lot
+What Makes a Lottery Winner
 
-This is a template repository for setting up your capstone project: it includes a simple folder structure and placeholder files for the most important assets you will be creating.
+PROJECT OVERVIEW
+Problem Area
+The lottery is innately unpredictable and uncertain but the variables at play during the purchase of the lottery ticket could affect the possibility of being a winner. The goal is to identify if there are variables that can skew the lottery in one’s favor or if it is purely random. 
+Some challenges are that lotteries are regional, so demographic may skew towards that region (in this case Texas), lack of results if the lottery really is just chance, outliers skewing the data.
 
-## Usage
+Users
+- Lottery players
+- Lottery retailers
+- Lottery companies
+- State governments
 
-1. Start a new GitHub repo using this template.
-2. Update your `LICENSE` file with date and owner.
-3. Update your `README.md` file to reflect the project - see a sample structure below and please refer to Synapse on what needs to be included here. 
-4. Set up and activate your conda environment:
-    - Create a new `conda` environment for your capstone project.
-    - Activate the environment and export:
-        ```bash
-        conda env export > conda.yml
-        ```
-    - Make sure re-export every time after you update the environment.
-    - You can reset your conda environment by running:
-        ```bash
-        conda env create -f conda.yml
-        conda activate <your-env-name>
-        ```
-5. Add your own notebooks in `./notebooks/` and remove placeholders.
-6. Add your own data in `./data/` and remove placeholder. Note: `.gitignore` will ignore the data folder when you push to github, save a copy of your raw and processed data, pickled models in a Google Drive folder and add the link in the `data_links.md` file.
-7. Add your project documents, figures, reports, presentation pdf's in the `./docs` and remove placeholders.
-8. Add your references (tutorials, papers, books etc.) in `./references`. 
-9. Add your own scripts in `./src/` and remove unnecessary folders.
+Proposed Solution
+By compiling and finding trends in data of Texas Lottery winners, we aim to pinpoint certain aspects such as:
+- Demographic of buyer
+- Date and time of purchase
+- Location of retailer
+- Sales of tickets
+By comparing and contrasting these variables we can find most likely traits that make up a lottery winner, providing clues to if distribution of lottery tickets, types of people who buy them make a difference in who wins the lottery.
 
-Feel free to rename the folder and customize the project structure to best fit your work - this template is just the starting point.
+Impact
+The impact that this project has includes:
+Having more people win the lottery, more evenly distributing wealth between lottery players
+Making the lottery more “equal” by identifying skewing variables
+Identify demographics prone to gambling
 
-------------------------------------------------------------------------------
+Data
+The analysis employs the dataset of winners of the Texas Lottery from July, 1999 to April, 2025. We will compare the prize won to various variables that could be affected from the type of buyer and the distribution of tickets.
 
-## Project Title
-=========================
-
-### Executive Summary
-
-... Define the problem
-... What is the data science opportunity
-... Key takeaways
-
-### Demo
-
-... Show your work:
-...     Data visualizations
-...     Interactive demo (e.g., `streamlit` app)
-...     Short video of users trying out the solution
-
-
-### Methodology
-
-... High-level diagrams of entire process:
-...     various data processing steps
-...     various modelling directions
-...     various prototyping directions
-
-
-### Organization
-
-#### Repository 
-
-* `data` 
-    - contains link to copy of the dataset (stored in a publicly accessible cloud storage)
-    - saved copy of aggregated / processed data as long as those are not too large (> 10 MB)
-
-* `model`
-    - `joblib` dump of final model(s)
-
-* `notebooks`
-    - contains all final notebooks involved in the project
-
-* `docs`
-    - contains final report, presentations which summarize the project
-
-* `references`
-    - contains papers / tutorials used in the project
-
-* `src`
-    - Contains the project source code (refactored from the notebooks)
-
-* `.gitignore`
-    - Part of Git, includes files and folders to be ignored by Git version control
-
-* `conda.yml`
-    - Conda environment specification
-
-* `README.md`
-    - Project landing page (this page)
-
-* `LICENSE`
-    - Project license
-
-#### Dataset
-
-... Google Drive links to datasets and pickled models
-
-### Credits & References
-
-... Include any personal learning
+Data Dictionary
+| Variable         | Description                                                              | Type        |
+| :--------------  | :---------:                                                              | :----       |
+| Amount Won       | Amount won from the lottery (any prize, doesn’t have to be jackpot)      | Float       |
+| Price of Ticket  | Price of the purchased ticket                                            | Float       |
+| US Citizen Flag  | Marks if winner is a US citizen                                          | Categorical |
+| City             | City where claimer resides                                               | Categorical |
+| State            | State where claimer resides                                              | Categorical |
+| County           | County where claimer resides                                             | Categorical |
+| Retail Name      | Name of retailer that sold ticket                                        | Categorical |
+| Scratch or Draw  | Identifies lottery as a draw game (including name) or a scratch-off      | Categorical |
+| Date Ticket Sold | The date the ticket was sold                                             | Date        |
