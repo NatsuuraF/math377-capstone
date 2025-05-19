@@ -75,7 +75,7 @@
     |
     ├── slides/                 # Slide deck PDF & source
     |   ├── Capstone Sprint 1 Presentation NF.pdf
-    └── └── Capstone-Final-Presentation.pdf
+    └── └── Capstone Final Presentation.pdf
 
 ---
 
@@ -117,7 +117,7 @@
 ---
 
 ## Slide Deck  
-*Location:* `/slides/Capstone_Final_Presentation.pdf`  
+*Location:* `/slides/Capstone Final Presentation.pdf`  
 Slides covering: overview, data & preprocessing, key insights, model results, demo/design & next steps.
 
 ---
