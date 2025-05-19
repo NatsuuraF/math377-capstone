@@ -72,6 +72,7 @@
     │
     ├── outputs/                # Figures
     |   └── figures/
+    |
     ├── slides/                 # Slide deck PDF & source
     |   ├── Capstone Sprint 1 Presentation NF.pdf
     └── └── Capstone-Final-Presentation.pdf
@@ -95,7 +96,7 @@
 5. **Baseline Modeling** – decision tree to get simple understanding and set benchmark
 6. **Advanced Modeling & Optimization** – simple neural network
 7. **Model Evaluation & Interpretation** – compare metrics (MSE, R Squared) and interpret data
-8. **Deployment & Reporting** – save final model in `outputs/models/`, create figures in `outputs/figures/`, assemble slide deck.
+8. **Deployment & Reporting** – create figures in `outputs/figures/`, assemble slide deck.
 
 ---
 
@@ -116,7 +117,7 @@
 ---
 
 ## Slide Deck  
-*Location:* `/presentation/Capstone_Final_Presentation.pdf`  
+*Location:* `/slides/Capstone_Final_Presentation.pdf`  
 Slides covering: overview, data & preprocessing, key insights, model results, demo/design & next steps.
 
 ---
