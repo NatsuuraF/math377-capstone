@@ -73,6 +73,7 @@
     ├── outputs/                # Figures
     |   └── figures/
     ├── slides/                 # Slide deck PDF & source
+    |   ├── Capstone Sprint 1 Presentation NF.pdf
     └── └── Capstone-Final-Presentation.pdf
 
 ---
